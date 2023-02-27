@@ -1,3 +1,4 @@
+import styled from "@emotion/styled";
 import Head from "next/head";
 import { PropsWithChildren } from "react";
 import { Nav } from "./Nav";
@@ -12,6 +13,13 @@ export const Layout = ({ children }: PropsWithChildren) => {
       </Head>
       <Nav />
       {children}
+      <Footer></Footer>
     </>
   );
 };
+
+const Footer = styled.footer`
+  width: 100%;
+  height: 60px;
+  background-color: red;
+`;
