@@ -1,4 +1,3 @@
-import MainBanner from "@/components/MainBanner";
 import ProjectList from "@/components/ProjectList";
 import SearchBar from "@/components/SearchBar";
 import StudyList from "@/components/StudyList";
@@ -10,18 +9,9 @@ import { NextPageContext } from "next";
 import cookies from "next-cookies";
 import Router from "next/router";
 
-interface User {
-  user: {
-    discordId: "231650692270522369";
-    username: "한호수";
-    avatarUrl: "a04c9934ed3d66e7ad38f8fa599d55a4";
-  };
-}
-
-export default function Home({ user }: User) {
+export default function Home() {
   return (
     <Container>
-      <MainBanner></MainBanner>
       <SearchBar></SearchBar>
       <ProjectList></ProjectList>
       <StudyList></StudyList>
